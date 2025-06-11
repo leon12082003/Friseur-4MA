@@ -8,7 +8,7 @@ from config import CALENDARS, OPENING_HOURS
 app = Flask(__name__)
 
 SCOPES = ['https://www.googleapis.com/auth/calendar']
-SERVICE_ACCOUNT_FILE = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
+SERVICE_ACCOUNT_FILE = "/etc/secrets/credentials.json"
 
 credentials = service_account.Credentials.from_service_account_file(
     SERVICE_ACCOUNT_FILE, scopes=SCOPES
