@@ -180,5 +180,3 @@ def cancel():
 
     return jsonify({"success": True, "message": "Termin erfolgreich gelöscht"})
 
-if __name__ == "__main__":
-    app.run(debug=True)
